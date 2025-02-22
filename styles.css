@@ -308,3 +308,53 @@ p {
     font-family: 'Inter', sans-serif;
     font-weight: 100; /* Extra Light */
 }
+
+.container {
+    position: relative;
+    margin-top: 80px;
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+}
+.containerPart1 {
+    padding: 20px;
+    background-color: #333;
+    border-radius: 5px;
+    width: 40%;
+}
+
+.containerPart2 {
+    padding: 20px;
+    background-color: #333;
+    border-radius: 5px;
+    width: 60%;
+}
+
+.containerPart2 form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 500px;
+}
+label {
+    color: white;
+    margin-bottom: 5px;
+}
+input, textarea, select {
+    background-color: #555;
+    border: 1px solid #777;
+    color: white;
+    padding: 8px;
+    border-radius: 3px;
+}
+button {
+    background-color: #A79F79;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+button:hover {
+    background-color: #0056b3;
+}
