@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Isabelle Pachta</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100&display=swap" rel="stylesheet">
+    <script src="javascript.js"></script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+    (function(){
+        emailjs.init({
+            publicKey: "FBOWT_8yobztCNJaO",
+        });
+    })();
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    </head>
+<body>
+    <nav class="top-menu">
+        <div class="logo2">Isabel Pachta</div>
+        <a href="index.html">Home</a>
+        <a href="resume.html">Resume</a>
+        <a href="events.html">Events</a>
+        <a href="contact.html">Kontakt</a>
+    </nav>
+    <div class="container">
+        <div class="containerPart1">
+            <div class="imagae-container">  
+                <img src="./Fotos/hochformat.jpg" alt="Isabelle title" class="hochformatBildContact">
+                <div class="image-overlay"></div>
+            </div>
+        </div>
+        <div class="containerPart2">
+
+            <!-- Contact Information -->
+            <div class="contact-info">
+                <p><i class="fas fa-envelope"></i> <span>email@example.com</span></p>
+                <p><i class="fab fa-whatsapp"></i> <span>+49 123 4567890</span></p>
+            </div>
+            <label class="formularHeader">Kontaktformular</label>
+            <form onsubmit="sendEmail(event)">
+                <label for="anrede">Anrede:</label>
+                <select id="anrede" name="anrede">
+                    <option value="">-- Bitte wählen --</option>
+                    <option value="Herr">Herr</option>
+                    <option value="Frau">Frau</option>
+                </select>
+        
+                <label for="name">Name*:</label>
+                <input type="text" id="name" name="name" required>
+        
+                <label for="email">E-Mail-Adresse*:</label>
+                <input type="email" id="email" name="email" required>
+        
+                <label for="nachricht">Nachricht*:</label>
+                <textarea id="nachricht" name="nachricht" rows="4" required></textarea>
+        
+                <button type="submit">Absenden</button>
+
+                
+            </form>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p class="footerP">Isabel Gräfin Pachta</p>
+        <hr class="kleine-trennlinie">
+        <div class="social-icons">
+            <button class="iconButton"><img src="./Fotos/Icons/icons8-facebook-neu-50.png" alt="insta" class="icon"></button>
+            <button class="iconButton"><img src="./Fotos/Icons/icons8-instagram-50.png" alt="insta" class="icon"></button>
+            <button class="iconButton"><img src="./Fotos/Icons/icons8-tick-tack-50.png" alt="insta" class="icon"></button>
+        </div>
+        <p class="footerP">isabelpachta@gmx.de</p>
+        <hr class="kleine-trennlinie">
+        <p class="footerP"> © 2024 Isabel Pachta</p>
+    </div>
+
+</body>
+</html>
